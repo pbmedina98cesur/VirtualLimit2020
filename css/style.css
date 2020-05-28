@@ -1,0 +1,1836 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+body{
+        background-image: url("../img/fondo.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100%;
+}
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80px;
+	background: #000000;
+	box-shadow: 0 4px 25px -22px #000000;
+    z-index: 10;
+}
+
+.header-content{
+	max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo h1{
+    color: white;
+}
+.logo h1 b{
+    color:#46a2fd ;
+}
+.novd{
+    color: white;
+}
+.novd:hover{
+    color:#46a2fd ;
+    transition: all 300ms;
+    cursor: pointer;
+}
+.vid:hover{
+    color:#46a2fd ;
+    transition: all 300ms;
+    cursor: pointer;
+}
+#perf:hover{
+    color:#46a2fd ;
+    transition: all 300ms;
+    cursor: pointer;
+}
+.menu{
+    height: 80px;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 40px;
+}
+.menu nav{
+    height: 100%;
+    display: flex;
+}
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu nav ul li{
+    height: 100%;
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.menu nav ul li a i{
+    display: none;
+}
+.menu nav ul li a .fab.fa-playstation{
+    color:rgb(32, 63, 155);
+    
+}
+.menu nav ul li a .fab.fa-xbox{
+    color:rgb(34, 165, 7);
+}
+.menu nav ul li a .fas.fa-gamepad{
+    color:rgb(226, 7, 7);
+}
+.menu nav ul li a .fas.fa-comments{
+    color:rgb(238, 171, 28);
+}
+.menu nav ul li a .fas.fa-user-circle{
+    color:rgb(0, 0, 0);
+}
+.visibles{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.oculto{
+   display: none;
+    width: 100%;
+    font-size: 30px;
+}
+#icon-menu{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 20px;
+    top: 16px;
+    font-size: 20px;
+    background-color: #fff;
+    border-radius: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    display: none;
+}
+#icon-menu:hover{
+    background: #9c9c9c;
+}
+.container-cover{
+    height: 250px;
+    position: relative;
+    top: 80px;
+    background-image: url(../img/imagenpri.jpg);
+    background-position: center;
+    max-width: 1200px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.fondo-ps4{
+    height: 250px;
+    position: relative;
+    top: 80px;
+    background-image: url(../img/fondo-ps4.jpg);
+    background-position: center;
+    max-width: 1200px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fondo{
+    height: 250px;
+    position: relative;
+    background-image: url(../img/juegos/ps4/fondo.jpg);
+    background-position: center;
+    max-width: 1200px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.iconos{
+    height: 100px;
+    position: relative;
+    top: 80px;
+    max-width: 1200px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+.iconos nav{
+    height: 100%;
+}
+.iconos nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+}
+.iconos nav ul li a{
+    height: 100%;
+}
+.hoverimagenes:hover{
+    transform: scale(1.1);
+    transition: all 600ms;
+}
+.slider{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    max-width: 1200px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fff;
+}
+.slider ul{
+	padding: 0;
+	display: flex;
+	width: 400%;
+	animation: cambio 20s infinite;
+	animation-direction: alternate;
+}
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+.slider img{
+    height: 250px;
+    width: 100%;
+    position: relative;
+    background-position: center;
+    max-width: 1200px;
+    margin: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@keyframes cambio{
+	0%{	margin-left: 0;}
+	20%{margin-left: 0;}
+	
+	25%{margin-left: -100%;}
+	45%{margin-left: -100%;}
+	
+	50%{margin-left: -200%;}
+	70%{margin-left: -200%;}
+	
+	75%{margin-left: -300%;}
+	100%{margin-left: -300%;}
+}
+/*Login*/
+#login{
+    position: fixed;
+    margin-top: 200px;
+    width: 50%;
+    margin-left: 25%;
+    background-color: #fff;
+    height: 300px;
+    z-index: 500;
+    transition: all 600ms;
+    display: none;
+}
+.cerrar{
+    width: 5%;
+    height: 100%;
+    background-color:#46a2fd;
+    display: flex;
+}
+.contenedor-login{
+    height: 100%;
+    width: 100%;
+}
+.fas.fa-times-circle{
+    font-size: 30px;
+    justify-content: center;
+    align-self: center;
+    color: black;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.titulo-login{
+    background-color:#46a2fd;
+    text-align: center;
+    width: 95%;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 5%;
+}
+.subtitulo-login{
+    text-align: center;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 15px;
+}
+#textcorreo{
+    width: 50%;
+    height: 10%;
+    resize: none;
+    margin: 10px 25%;
+    border-radius: 5px;
+    font-size: 20px;
+    color:#46a2fd;
+    outline:none;
+    cursor: text;
+}
+#textcontraseña{
+    width: 50%;
+    height: 10%;
+    resize: none;
+    margin: 10px 25%;
+    border-radius: 5px;
+    font-size: 20px;
+    color:#46a2fd;
+    outline:none;
+    cursor: text;
+}
+.olvidar{
+    width: 100%;
+    text-align: center;
+    color:#46a2fd;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 500ms all;
+}
+.olvidar:hover{
+    font-size: 16px;
+}
+.nuevo{
+    width: 100%;
+    text-align: center;
+    color:#46a2fd;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 500ms all;
+}
+.nuevo:hover{
+    font-size: 16px;
+}
+.entrar{
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.bottonentrar{
+    height: 50px;
+    width: 100px;
+    border: none;
+    background-color: #46a2fd;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.bottonentrar:hover{
+    opacity: 90%;
+}
+.contenedor-superior-login{
+    width: 100%;
+    height: 15%;
+    display: flex;
+}
+/*Buscador de contenido*/
+#ctn-icon-search{
+    position: absolute;
+    right: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ctn-icon-search i{
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 300ms;
+}
+#ctn-icon-search i:hover{
+    color: #46a2fd;
+    font-size: 24px;
+    transform: all 300ms;
+}
+#ctn-bars-search{
+    position: fixed;
+    top: -10px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 9;
+    transition: all 600ms;
+}
+#ctn-bars-search input{
+    display: block;
+    width: 1200px;
+    margin: auto;
+    padding: 10px;
+    font-size: 18px;
+    outline: 0;
+}
+#box-search{
+    position: fixed;
+    top: 165px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1200px;
+    z-index: 8;
+    background-color: #fff;
+    overflow: hidden;
+    display: none;
+}
+#box-search li a{
+    display: block;
+    width: 1200px;
+    color: #777777;
+    padding: 12px 20px;
+}
+#box-search li a:hover{
+    background-color: #f3f3f3;
+}
+#box-search li a i{
+    margin-right: 10px;
+    color:#777777;
+}
+#cover-ctn-search{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 7;
+    display: none;
+}
+
+#button-up{
+    width: 60px;
+    height: 60px;
+    background-color:#46a2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 90px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+}
+
+#button-up:hover{
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0.1);
+}
+
+/*Novedades*/
+.novedades-1{
+    height: 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    margin-top:80px;
+}
+.novedades-2{
+    height: 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: green;
+    display: flex;
+    margin-top:80px;
+}
+.novedades1-izquierda{
+    height: 100%;
+    max-width:  50%;
+    background-color: #1d1c1c;
+    border-right: 1px solid #777777;
+}
+.novedades1-izquierda h1{
+    font-size: 23px;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3%;
+    text-align: center;
+    cursor: pointer;
+}
+.novedades1-izquierda h1:hover{
+    text-decoration-line: underline;
+}
+.novedades1-izquierda h2{
+    color: #46a2fd;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1% 3%;
+    font-size: 15px ;
+}
+.novedades1-izquierda p{
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 3%;s
+    text-align: justify;
+}
+.novedades1-derecha{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/Novedades/ps4-n.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.novedades1-derecha2{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/Novedades/ps4-n.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.novedades1-derecha3{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/Novedades/ps4-n.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pruebanovedades{
+    width: 100%;
+    height: 100%;
+}
+.pruebanovedades2{
+    width: 100%;
+    height: 100%;
+}
+.novedades-2{
+    height: 300px;
+    width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid #777777;
+}
+
+.fifa{
+    background-image: url(../img/slider/fifa.jpg);
+    height: 300px;
+    position: relative;
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.god{
+    background-image: url(../img/slider/god.png);
+    height: 300px;
+    position: relative;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.thelast{
+    background-image: url(../img/slider/thelast.jpg);
+    height: 300px;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.nba{
+    background-image: url(../img/slider/nba.jpg);
+    height: 300px;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-footer{
+    width: 100%;
+    bottom: 0;
+}
+.container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+ 
+}
+.container-footer footer .redes-footer .icon-redes-footer{
+   font-size: 40px;
+   margin: 20px;
+   background: #efefef;
+   width: 50px;
+   height: 50px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 100%;
+   color:#a2a2a2;
+}
+.container-footer footer .redes-footer .fa-facebook-f:hover{
+  background-color: #41579A;
+  color: #fff;
+}
+.container-footer footer .redes-footer .fa-youtube:hover{
+    background-color: rgb(201, 9, 9);
+    color: #fff;
+}
+.container-footer footer .redes-footer .fa-twitter:hover{
+    background-color: rgb(115, 146, 248);
+    color: #fff;
+}
+.container-footer footer .redes-footer .fa-instagram:hover{
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443A8);
+    color: #fff;
+}
+.container-footer footer hr{
+    margin-top: 20px;
+    border:none;
+    height: 2px;
+    background: #fff;
+}
+.container-footer h4{
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+  font-weight: 500px;
+}
+
+.sliderbarraps4{
+    margin: 80px auto 0 auto;
+    max-width: 1200px;
+    height: 60%;
+}
+#ps42{
+    margin: 0 auto 0 auto;
+}
+.contenedor-recomendadas-ps4{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.sliderbarraps4 .contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.sliderbarraps4 .contenedor-principal .flecha-izquierda,
+.sliderbarraps4 .contenedor-principal .flecha-derecha{
+    position: absolute;
+    border:none;
+    background: rgba(0,0,0,0.3);
+    font-size:40px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    transition: .2s ease all;
+}
+.sliderbarraps4 .contenedor-principal .flecha-izquierda:hover,
+.sliderbarraps4 .contenedor-principal .flecha-derecha:hover{
+background:rgba(0,0,0,0.9);
+}
+.sliderbarraps4 .contenedor-principal .flecha-izquierda{
+    left: 0;
+}
+.sliderbarraps4 .contenedor-principal .flecha-derecha{
+    right: 0;
+}
+.sliderbarraps4 .contenedor-carousel{
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior:smooth;
+    background-color: #135aa1;
+}
+.sliderbarraps4 .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sliderbarraps4 .contenedor-carousel .carousel .juegos-ps4{
+    min-width: 19%;
+    margin: 0.5%;
+    transition:  .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.sliderbarraps4 .contenedor-carousel .carousel .juegos-ps4.hover{
+    transform: scale(1.2);
+    transform-origin: center;
+}
+.sliderbarraps4 .contenedor-carousel .carousel .juegos-ps4 img{
+    width: 100%;
+    vertical-align: top;
+}
+.sliderbarraxbox .contenedor-carousel{
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior:smooth;
+    background-color: #1c8003;
+}
+.sliderbarraxbox .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sliderbarraxbox .contenedor-carousel .carousel .juegos-ps4{
+    min-width: 19%;
+    margin: 0.5%;
+    transition:  .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.sliderbarraxbox .contenedor-carousel .carousel .juegos-ps4.hover{
+    transform: scale(1.2);
+    transform-origin: center;
+}
+.sliderbarraxbox .contenedor-carousel .carousel .juegos-ps4 img{
+    width: 100%;
+    vertical-align: top;
+}
+/*-----------------------------------------------------------------------------------------------------------------------*/
+.sliderbarraxbox{
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 60%;
+}
+.contenedor-recomendadas-ps4{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.sliderbarraxbox .contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.sliderbarraxbox .contenedor-carousel{
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior:smooth;
+}
+.sliderbarraxbox .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sliderbarraxbox .contenedor-carousel .carousel .juegos-ps4{
+    min-width: 19%;
+    transition:  .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.sliderbarraxbox .contenedor-carousel .carousel .juegos-ps4.hover{
+    transform: scale(1.2);
+    transform-origin: ce;
+}
+.sliderbarraxbox .contenedor-carousel .carousel .juegos-ps4 img{
+    width: 100%;
+    vertical-align: top;
+}
+/*-----------------------------------------------------------------------------------------*/
+.sliderbarranintedo{
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 60%;
+}
+.contenedor-recomendadas-ps4{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.sliderbarranintedo .contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.sliderbarranintedo .contenedor-carousel{
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior:smooth;
+}
+.sliderbarranintedo .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sliderbarranintedo .contenedor-carousel .carousel .juegos-ps4{
+    min-width: 19%;
+    transition:  .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.sliderbarranintedo .contenedor-carousel .carousel .juegos-ps4.hover{
+    transform: scale(1.2);
+    transform-origin: ce;
+}
+.sliderbarranintedo .contenedor-carousel .carousel .juegos-ps4 img{
+    width: 100%;
+    vertical-align: top;
+}
+.sliderbarranintedo .contenedor-carousel{
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior:smooth;
+    background-color: #cf0707;
+}
+.sliderbarraxbox .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sliderbarranintedo .contenedor-carousel .carousel .juegos-ps4{
+    min-width: 19%;
+    margin: 0.5%;
+    transition:  .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.sliderbarranintedo .contenedor-carousel .carousel .juegos-ps4.hover{
+    transform: scale(1.2);
+    transform-origin: center;
+}
+.sliderbarranintedo .contenedor-carousel .carousel .juegos-ps4 img{
+    width: 100%;
+    vertical-align: top;
+}
+/*-----------------------------------------------------------------------------------------*/
+.sliderpc{
+    margin: 0 auto;
+    max-width: 1200px;
+    height: 60%;
+}
+.contenedor-recomendadas-ps4{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.sliderpc .contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.sliderpc .contenedor-carousel{
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior:smooth;
+}
+.sliderpc .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sliderpc .contenedor-carousel .carousel .juegos-ps4{
+    min-width: 19%;
+    transition:  .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.sliderpc .contenedor-carousel .carousel .juegos-ps4.hover{
+    transform: scale(1.2);
+    transform-origin: ce;
+}
+.sliderpc .contenedor-carousel .carousel .juegos-ps4 img{
+    width: 100%;
+    vertical-align: top;
+}
+.sliderpc .contenedor-carousel{
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior:smooth;
+    background-color: #000000;
+}
+.sliderpc .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.sliderpc .contenedor-carousel .carousel .juegos-ps4{
+    min-width: 19%;
+    margin: 0.5%;
+    transition:  .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+}
+.sliderpc .contenedor-carousel .carousel .juegos-ps4.hover{
+    transform: scale(1.2);
+    transform-origin: center;
+}
+.sliderpc.contenedor-carousel .carousel .juegos-ps4 img{
+    width: 100%;
+    vertical-align: top;
+}
+.señuelo{
+    display: none;
+    height: 200px;
+    width: 100%;
+    background-color:#1d1c1c;
+}
+.señuelo-top{
+    display: none;
+    height: 200px;
+    width: 100%;
+    background-color:#1d1c1c;
+}
+
+/*Articulo*/
+.container-article{
+    height: 500px;
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    background-color: white;
+    display: flex;
+    padding-top: 20px;
+}
+.container-article img{
+    height: 50%;
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    margin: 0 10%;
+}
+.container-article aside h2{
+    margin: 0 10%;
+}
+.container-article aside h2, .container-article aside p{
+    margin-top: 20px;
+    padding: 0px 20px;
+}
+.container-article aside button{
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 10px 50px;
+    font-size: 16px;
+    background-color: #E9712A;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 0 25%;
+}
+.container-article aside button:hover{
+    opacity: 0.7;
+}
+.señuelo-2{
+    height: 50px;
+    width: 100%;
+    background-color: #fff;
+    display: none;
+}
+/*-----------------------------------------------------------------------------------------*/
+
+/*---------------------------------SEKIROOOOOOOOOOOOOO--------------------------------------------------------*/
+.contenedor-top-sekiro{
+    width: 100%;
+    height: 400px;
+    display: flex;
+}
+.señuelo-3{
+    height: 30px;
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    display: none;
+}
+.contenedor-sekiro{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 1090px;
+    background-color: rgb(235, 235, 235);
+}
+.contenedor-sekiro-derecha{
+    width: 90%;
+    max-height: 100%;
+}
+.sekiro{ 
+    width: 20%;
+    height: 68%;
+    background-image: url(../img/Juegos/ps4/sek.jpg);
+    background-repeat: no-repeat;
+    justify-content: center;
+    margin-left: 1%;
+    margin-top: 120px;
+    background-size: contain;
+}
+.nombre-juego{
+    width: 95%;
+    height: 50px;
+    background-color: black;
+    margin: 120px auto 0 auto;
+}
+.texto-sekiro{
+    color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.opciones-sekiro-1{
+    width: 95%;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    background-color: rgb(255, 253, 253)
+}
+.ps4-sekiro{
+    color: black;
+    font-size: 20px;
+}
+.check{
+    color:#35b824;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.ps4-sekiro:hover{
+color: rgb(8, 127, 196);
+}
+.contenedor-opciones-sekiro{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.contenedor-medio{
+    width: 95%;
+    height: 110px;
+    background-color: #cfcfcf;
+    margin: 0 auto;
+}
+.contenedor-usuario-sekiro{
+    text-align: center;
+}
+.fuego{
+    color: red;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.consola-seleccionada{
+    width: 60%;
+    height: 50px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+}
+.ps4-seleccionada{
+    width: 15%;
+    height: 80%;
+    background-color:white;
+    border-radius: 15%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.pc-seleccionada{
+    width: 15%;
+    height: 80%;
+    background-color: white;
+    border-radius: 15%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.idiomas{
+    width: 40%;
+    height: 20%;
+    display: flex;
+    margin: 0 auto;
+}
+.texto-idiomas{
+    width: 30%;
+    height: 100%;
+    border-right: 1px black solid;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.españa{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/Juegos/idomas/spain.webp);
+    margin-left: 3%;
+}
+.alemania{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/Juegos/idomas/alemania.webp);
+    margin-left: 3%;
+}
+.francia{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/Juegos/idomas/francia.webp);
+    margin-left: 3%;
+}
+.italia{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/Juegos/idomas/italia.webp);
+    margin-left: 3%;
+}
+.inglaterra{
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/Juegos/idomas/inglaterra.webp);
+    margin-left: 3%;
+}
+.precio{
+    width: 95%;
+    height: 15.6%;
+    background-color: black;
+    margin: 0 auto;
+}
+.precio-contenedor{
+    width: 30%;
+    height: 100%;
+    margin: 0 auto;
+}
+.precio-contenedor h1{
+    color: #46a2fd;
+    text-align: center;
+    height: 100%;
+}
+.contenedor-bajo-sekiro{
+    height: 600px;
+    width: 100%;
+    background-color: firebrick;
+    display: flex ;
+}
+.contenedor-izquierda-bajo-sekiro{
+    width: 20%;
+    height: 100%;
+    background-color: forestgreen;
+}
+.contenedor-derecha-bajo-sekiro{
+    width: 20%;
+    height: 100%;
+    background-color: white;
+}
+.contenedor-montaje-bajo{
+    height: 500px;
+    width: 100%;
+    display: flex;
+}
+.contenedor-consolas-sekiro{
+    width: 100%;
+    height: 25%;
+    display: flex;
+}
+.contenedor-consolas-sekiro h3{
+    margin-top: 15%;
+    margin-left: 4%;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenedor-consolas-sekiro p{
+    margin-top: 5%;
+    margin-left: 4%;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.usuario{
+    max-width: 50px;
+    height: 50px;
+    font-size: 24px;
+    background-color: #000000;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px;
+    margin-top: 13%;
+    margin-left: 3%;
+    margin-right: 3%;
+    color: white;
+    display: flex;
+    margin-right: 5%;
+}
+.montaje{
+    width: 78.5%;
+    height: 100%;
+}
+.contenedor-usuario{
+    display: flex;
+    height: 25%;
+    width: 100%;
+}
+.contenedor-usuario-general{
+    width: 20%;
+    height: 94%;
+    background-color: #cfcfcf;
+    margin-top: 28px;
+    margin-right: 5px;
+}
+.novedades-informacion{
+    height: 200px;
+    width: 100%;
+    background-color: rgb(235, 235, 235);
+    display: flex;
+}
+.novedades-informacion-izquierda{
+    width: 20%;
+    height: 100%;
+    background-color: rgb(235, 235, 235);
+}
+.novedades-informacion-derecha{
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    margin: 0 2%;
+}
+.novedades-informacion-derecha h4{
+    margin: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color:#636161;
+}
+.novedades-informacion-derecha h1{
+    margin: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color:#46a2fd;
+    cursor: pointer;
+    opacity: 50%;
+    width: 30%;
+}
+.novedades-informacion-derecha h1:hover{
+    opacity: 100%;
+}
+#mostrarInformacion{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(235, 235, 235);
+    transition: 300ms all;
+    display: none;
+}
+.mostrarinformacionizquierda{
+    height: 100%;
+    width: 20%;
+    background-color: rgb(235, 235, 235);
+}
+.mostrarinformacionderecha{
+    height: 100%;
+    width: 80%;
+    background-color:#fff;
+    margin: 0 2%;
+}
+.mostrarinformacionderecha h4{ 
+    margin: 1% 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    color:#636161;
+}
+.mostrarinformacionderecha h3{ 
+    margin: 1% 2%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    color:#46a2fd;
+}
+/*--------------------------------------------------------------------------Novedad seleccionada--------------------------------------------------------------------------*/
+.contenedor-novseleccionada{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2500px;
+    background-color: rgb(235, 235, 235);
+}
+.titulo-novd-seleccionada{
+    margin-top: 80px;
+    margin: 80px 3% 3% 3%;
+}
+.titulo-novd-seleccionada h1{
+    color: #46a2fd;
+    font-size: 50px;
+    text-align: center;
+
+}
+.titulo-novd-seleccionada h1:hover{
+    color: #3982ca;
+    cursor: pointer;
+    transition: 1s all;
+}
+.contenedor-selecc-nov{
+    width: 85%;
+    background-color: #fff;
+    height: 100%;
+    margin: 0 auto;
+}
+.pie-titulo-novedades{
+    width: 100%;
+    height: 1%;
+    display: flex;
+    margin-top: 2%;
+}
+.nombre-seleccion{
+    width: 10%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-right: 1px solid black;
+    margin-left: 3%;
+}
+.contenedor_novedades{
+    height: 100%;
+    width: 100%;
+}
+.publicado-seleccion{
+    margin-left: 1%;
+}
+.imagenps5{
+    max-width: 95%;
+    height: 20%;
+    background-image: url(../img/ps5_novedades.jpg);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.imagenps5_1{
+    max-width: 95%;
+    height: 20%;
+    background-image: url(../img/nov1.jpg);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 8%;
+    margin-bottom: 5%;
+}
+.imagenps5_2{
+    max-width: 95%;
+    height: 20%;
+    background-image: url(../img/nov2.jpg);
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+.texto-seleccion-ps5{
+    width: 100%;
+    height: 5%;
+}
+.texto-seleccion-ps5 h4{
+    margin: 2.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    color:#636161;
+}
+.titulo-seleccion-ps5 h1{
+    color: #46a2fd;
+    font-size: 30px;
+    margin-left: 2.5%;
+}
+.oculto li{
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+}
+.oculto li:hover{
+    background-color: #c5c5c5;
+}
+.oculto li p1{
+    margin-left: 5%;
+}
+.fab.fa-searchengin{
+    color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------------------Responsive--------------------------------------------------------------------------*/
+@media (max-width: 1200px) {
+    .header-content, .container-footer footer{
+        max-width: 1000px;
+        padding: 0 20px;
+    }
+    .iconos{
+    display: none;
+  }
+  #icon-menu{
+    display: flex;
+}
+#ctn-icon-search{
+    display: none;
+}
+.container-all{
+    transition: all 300ms;
+   }
+   .move-container-all{
+       transform: translateX(300px);
+   }
+   .menu{
+       width: 0;
+       height: 100vh;
+       position: fixed;
+       top: 80px;
+       left: 0;
+       background-color: white;
+       overflow: hidden;
+       transform: translateX(-350px);
+       box-shadow: 10px 0 20px -25px #000000;
+       color: #000000;
+       transition: all 300ms cubic-bezier(1,0,0,1);
+   }
+   .show-lateral{
+       width: 300px;
+       transform: translateX(0px);
+   }
+   .menu nav ul{
+      flex-direction: column;
+      width: 100%;
+   }
+   .menu nav ul .oculto li a i{
+       display: inline;
+   }
+   .contenedor_novedades{
+       height: 700px;
+   }
+   .visibles{
+       max-width: 300px;
+       height: 50px;
+       justify-content: center;
+       display: none;
+   }
+   .menu nav ul .oculto li{
+       height: 15vh;
+       margin: 0px;
+       color: black;
+   }
+   .menu nav ul .oculto li p1{
+       color: black;
+   }
+   .menu nav ul li a{
+       width: 20xp;
+   }
+   .oculto{
+       display: flex;
+       display: inline;
+   }
+}
+@media (max-width: 800px){
+    .container-all{
+     transition: all 300ms;
+    }
+    .move-container-all{
+        transform: translateX(300px);
+    }
+    .container-article img{
+        height: 60%;
+        width: 80%;
+        justify-content: center;
+        text-align: center;
+        margin: 0 10%;
+    }
+    #ctn-bars-search{
+        margin-left: 32%;
+    }
+    #box-search{
+        margin-left:500px ;
+    }
+    #ctn-bars-search input {
+        width: 400px;
+        margin-left: 60px;
+    }
+    .menu{
+        width: 0;
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background-color: white;
+        overflow: hidden;
+        transform: translateX(-350px);
+        box-shadow: 10px 0 20px -25px #000000;
+        color: #000000;
+        transition: all 300ms cubic-bezier(1,0,0,1);
+    }
+    .show-lateral{
+        width: 300px;
+        transform: translateX(0px);
+    }
+    .señuelo{
+        display: block;
+        height: 50px;
+        width: 100%;
+        margin-top: 230px;
+    }
+    .señuelo-top{
+        display: block;
+        height: 130px;
+        width: 100%;
+    }
+    
+    .menu nav ul{
+       flex-direction: column;
+       width: 100%;
+    }
+    .menu nav ul .oculto li a i{
+        display: inline;
+    }
+    .visibles{
+        max-width: 300px;
+        height: 50px;
+        justify-content: center;
+        display: none;
+    }
+    .menu nav ul .oculto li{
+        height: 15vh;
+        margin: 0px;
+        color: black;
+    }
+    .pruebanovedades2{
+        width: 100%;
+        height: 100%;
+    }
+    .menu nav ul .oculto li p1{
+        color: black;
+    }
+    .menu nav ul li a{
+        width: 20xp;
+    }
+    .oculto{
+        display: flex;
+        display: inline;
+    }
+    .container-article{
+        flex-wrap: wrap;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .container-article aside{
+        margin: 10px;
+    }
+    .container-article aside button{
+        margin:0 42%;
+    }
+    #icon-menu{
+        display: flex;
+    }
+    .novedades-1{
+        display: block;
+        margin-top: -30px;
+    }
+    .novedades1-izquierda{
+        height: 80%;
+        max-width:  100%;
+    }
+    .novedades-2{
+        margin-top: 300px;
+        display: none;
+    }
+    .novedades1-derecha{
+        width: 70%;
+        text-align: center;
+        margin-left: 15%;
+        margin-bottom: 300px;
+    }
+    .pruebanovedades{
+        background-color: #1d1c1c;
+    }
+    .novedades1-derecha2{
+        margin-top: 300px;
+        background-color: red;
+    }
+    .contenedor-top-sekiro{
+        display: block;
+        height: 600px;
+    }
+    .sekiro{ 
+        height: 50%;
+        margin-top: 80px;
+        margin-left: 35%;
+        margin-right: 15%;
+        width: auto;
+    }
+    .contenedor-montaje-bajo{
+        margin-top: 100px;
+    }
+    .contenedor-sekiro-derecha{
+        width: 100%;
+        margin-top: -100px;
+    }
+    .contenedor-montaje-bajo{
+        margin-top: 0px;
+        display: block;
+    }
+    .contenedor-usuario-general{
+        display: none;
+    }
+    .montaje{
+        width: 98;
+        height: 100%;
+        margin: -100px 0px 0px 80px;
+    }
+    .novedades-informacion-izquierda{
+        display: none;
+    }
+    .novedades-informacion-derecha{
+        margin-left: 85px;
+        width: 77%;
+        height: 300px;
+    }
+    #mostrarInformacion{
+        display: block;
+        height: 600px;
+        margin-top: 20px;
+    }
+    .contenedor-sekiro{
+        height: 1800px;
+    }
+    .novedades-informacion-derecha h1{
+        width: 50%;
+    }
+    .mostrarinformacionizquierda{
+        display: none;
+    }
+    .mostrarinformacionderecha{
+        margin-left: 85px;
+        width: 77%;
+        display: block;
+        height: 100%;
+    }
+    .novedades-informacion-derecha h1{
+        opacity: 100%;
+    }
+    .imagenps5{
+        width: 90%;
+        height: 10%;
+        background-size: cover;
+    }
+    .imagenps5_1{
+        width: 90%;
+        height: 15%;
+        background-size: cover;
+        margin-top: 9%;
+    }
+    .imagenps5_2{
+        width: 90%;
+        height: 15%;
+        background-size: cover;
+    }
+    .contenedor-novseleccionada{
+        height: 2100px;
+    }
+    .nombre-seleccion{
+        width: 20%;
+    }
+    .titulo-seleccion-ps5{
+        margin: 3% 0;
+    }
+    .texto-seleccion-ps5{
+        height: 200px;
+    }
+    #login{
+        width: 80%;
+        margin: 25% 15%;
+    }
+@media (max-width: 480px){
+    .move-container-all{
+        transform: translateX(300px);
+    }
+    #button-up{
+        right: 95;
+    }
+     .novedades1-derecha{
+        width: 99%;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 20px;
+        background-size: contain;
+    }
+    .señuelo-3{
+        display: block;
+    }
+    .container-cover{
+        height: 280px;
+    }
+     .nombre-seleccion{
+        width: 30%;
+    }
+    .slider{
+        height: 280px;
+    }
+     .señuelo{
+        height: 10px;
+        margin-top: 230px;
+    }
+    #ctn-bars-search{
+        margin-left: 0%;
+    }
+    #box-search{
+        margin-left:390px ;
+    }
+    #ctn-bars-search input {
+        width: 400px;
+        margin-left: 10px;
+    }
+    .texto-seleccion-ps5{
+        height: 320px;
+    }
+     .imagenps5{
+        width: 90%;
+        height: 5%;
+        background-size: cover;
+    }
+    .imagenps5_1{
+        width: 90%;
+        height: 10%;
+        background-size: cover;
+        margin-top: 100px;
+    }
+    .imagenps5_2{
+        width: 99%;
+        height: 8%;
+        background-size: cover;
+    }
+    .container-article{
+        height: 450px;
+        overflow: hidden;
+    }
+    .señuelo-2{
+        margin-top: 20px;
+        display: block;
+    }
+    .contenedor-novseleccionada{
+        height: 2200px;
+    }
+    .container-article img{
+        overflow: hidden;
+        height: 60%;
+        width: 50%;
+        margin: 0 30%;
+    }
+    .container-article aside button{
+        margin-left: 50px;
+        padding: 20px 70px;
+        font-size: 16px;
+        background-color: #E9712A;
+        border: none;
+        color: white;
+        cursor: pointer;
+        border-radius: 6px;
+        margin: 0 25% 0 30%;
+    }
+    .sliderbarraps4 .contenedor-principal .flecha-izquierda,
+    .sliderbarraps4 .contenedor-principal .flecha-derecha{
+        height: 100%;
+        top: 0;
+    }
+    .container-article aside h2, .container-article aside p{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 0px 20px;
+    }
+    .menu{
+        height: 100vh;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        background-color: white;
+        overflow: hidden;
+        box-shadow: 10px 0 20px -25px #000000;
+        color: #000000;
+    }
+    .menu nav ul{
+       flex-direction: column;
+       width: 100%;
+    }
+    .menu nav ul .oculto li a i{
+        display: inline;
+    }
+    .visibles{
+        max-width: 300px;
+        height: 50px;
+        justify-content: center;
+        display: none;
+    }
+    .fondo-ps4{
+        height: 150px;
+    }
+    .menu nav ul .oculto li{
+        height: 15vh;
+        margin: 0px;
+        color: black;
+    }
+    .menu nav ul .oculto li p1{
+        color: black;
+    }
+    .menu nav ul li a{
+        width: 20xp;
+    }
+    .idiomas{
+        width: 100%;
+    }
+    .contenedor-opciones-sekiro{
+        width: 100%;
+    }
+    .sekiro{
+        margin-left: 150px;
+    }
+    .contenedor-montaje-bajo{
+        width: 100%;
+    }
+    .montaje{
+        width: 100%;
+        margin: -100px 0 0 0;
+    }
+    .novedades-informacion{
+        height: 260px;
+    }
+    #mostrarInformacion{
+        height: 700px;
+        width: 100%;
+    }
+    .novedades-informacion-derecha{
+        width: 95%;
+        margin: 0px 2.5%;
+    }
+    .mostrarinformacionderecha{
+        width: 95%;
+        margin: 0px 2.5%;
+        height: 750px;
+    }
+    .novedades-informacion-derecha h1{
+        width: 100%;
+        height: 300px;
+    }
+    .contenedor-sekiro{
+        height: 2140px;
+    }
+    #login{
+        width: 96%;
+        margin: 5% 2%;
+    }
+    .oculto{
+        display: flex;
+        display: inline;
+}
+}
+}
